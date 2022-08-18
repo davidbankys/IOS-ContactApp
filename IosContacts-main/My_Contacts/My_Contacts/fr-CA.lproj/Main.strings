@@ -1,0 +1,24 @@
+
+/* Class = "UINavigationItem"; title = "Contact Details"; ObjectID = "5ml-wL-lkP"; */
+"5ml-wL-lkP.title" = "Détails du contact";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "Mmd-l1-del"; */
+"Mmd-l1-del.text" = "Étiqueter";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "gpE-K2-fdB"; */
+"gpE-K2-fdB.text" = "Étiqueter";
+
+/* Class = "UILabel"; text = "Last Name:"; ObjectID = "jyS-jZ-EqX"; */
+"jyS-jZ-EqX.text" = "Nom de famille:";
+
+/* Class = "UILabel"; text = "Phone:"; ObjectID = "l3C-r3-D1t"; */
+"l3C-r3-D1t.text" = "Téléphoner:";
+
+/* Class = "UINavigationItem"; title = "Contacts"; ObjectID = "m1E-1U-9oL"; */
+"m1E-1U-9oL.title" = "Contacts";
+
+/* Class = "UIBarButtonItem"; title = "Add"; ObjectID = "oXO-nE-Xh7"; */
+"oXO-nE-Xh7.title" = "Ajouter";
+
+/* Class = "UILabel"; text = "First Name:"; ObjectID = "pQx-Sg-Ita"; */
+"pQx-Sg-Ita.text" = "Prénom:";
