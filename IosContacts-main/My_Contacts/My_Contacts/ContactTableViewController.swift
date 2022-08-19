@@ -56,7 +56,7 @@ class ContactTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             // Delete the row from the data source
-        
+            
             context.deleteObject(myData.objectAtIndex(indexPath!.row) as NSManagedObject)
                        tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
                    } else if editingStyle == .Insert {
@@ -66,7 +66,7 @@ class ContactTableViewController: UITableViewController {
    
 
     
-    // Override to support rearranging the table view.
+
     override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
         contactList.moveContact(from: fromIndexPath.row, to: to.row)
     }
