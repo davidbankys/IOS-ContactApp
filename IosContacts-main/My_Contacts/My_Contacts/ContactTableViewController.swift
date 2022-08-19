@@ -53,47 +53,16 @@ class ContactTableViewController: UITableViewController {
     }
     
 
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
-    }
-    */
-
-    
-    // Override to support editing the table view.
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             // Delete the row from the data source
-            
-            let title = NSLocalizedString("Are you sure you want to delete?", comment: "alertController title")
-            let message = NSLocalizedString("Deleted contacts cannot be retrieved", comment: "alertController message")
-            
-            let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
-            
-            let affirm = NSLocalizedString("Yes", comment: "alertyes")
-            let decline = NSLocalizedString("No", comment: "alertno")
-
-            let yes = UIAlertAction(title: affirm, style: .destructive)
-            {(UIAlertAction) in
-                self.contactList.deleteContact(at: indexPath.row)
-                tableView.deleteRows(at: [indexPath], with: .fade)
-            }
-            let cancel = UIAlertAction(title: decline, style: .cancel, handler: nil)
-            
-            alert.addAction(yes)
-            alert.addAction(cancel)
-            present(alert, animated: true)
-            
-            
-            
-            
-            
-        } else if editingStyle == .insert {
         
-        }    
-    }
+            context.deleteObject(myData.objectAtIndex(indexPath!.row) as NSManagedObject)
+                       tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
+                   } else if editingStyle == .Insert {
+                       // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
+                   }
+               }
    
 
     
